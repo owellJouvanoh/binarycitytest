@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+    /******For Login and Register*******/
+    
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    body{
+        background: #000;
+        
+    }
+    small{
+        color: #fff;
+    }
+
+    /******Logo*******/
+    nav {
+        position: fixed;
+        padding: 25px 60px;
+        z-index: 1;
+    }
+    nav a img {
+        width: 167px;
+    }
+    
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 90vh;
+    }
+    
+    .box {
+        background:white;
+        display: flex;
+        flex-direction: column;
+        padding: 25px 25px;
+        border-radius: 20px;
+        
+    }
+    
+    .form-box {
+        width: 450px;
+        margin: 0px 10px;
+    }
+    
+    .form-box header {
+        font-size: 25px;
+        font-weight: 600;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #e6e6e6;
+        margin-bottom: 10px;
+    }
+    
+    .form-box form .field {
+        display: flex;
+        margin-bottom: 10px;
+        flex-direction: column;
+    }
+    
+    .form-box form .input input {
+        height: 40px;
+        width: 100%;
+        font-size: 16px;
+        padding: 0 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        outline: none;
+    }
+    
+    .btn {
+        height: 35px;
+        background: rgba(255, 6, 6, 0.8);
+        border-radius: 5px;
+        color: #fff;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all .3s;
+        margin-top: 10px;
+        padding: 0px 10px;
+    }
+    
+    .btn:hover {
+        opacity: 0.82;
+        color: rgb(255, 0, 0);
+    }
+    
+    .submit {
+        width: 100%;
+    }
+    
+    .link {
+        margin-bottom: 15px;
+    }
+    /******Home page navigater*******/
+    /*********Navigater or menu***********/
+    
+    
+    .button {
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    @media only screen and (max-width:840px) {
+        .bottom {
+            margin-top: 0;
+        }
+    }
+    /*********desiging the massage looks***********/
+    .massage{
+        text-align: center;
+        background: #f9eded;
+        padding:15px 0px;
+        border:1px solid  #699053;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        color: red;
+
+
+    }
+
+    @media (max-width: 740px) {
+        body::before {
+            display: none;
+        }
+    
+        nav, .form-wrapper {
+            padding: 20px;
+        }
+    
+        nav a img {
+            width: 140px;
+        }
+    
+        .form-wrapper {
+            width: 100%;
+            top: 43%;
+        }
+    
+        .form-wrapper form {
+            margin: 25px 0 40px;
+        }
+    }
